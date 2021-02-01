@@ -1,0 +1,29 @@
+.remove-modal {
+  position: absolute;
+  background:rgba(241, 223, 223, 0.8);
+  top: 30%;
+  left: 20%;
+  text-align: center;
+  padding: 15px;
+}
+
+.remove-overlayModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(243, 234, 234, 0.8);
+}
+
+.remove-modal button {
+  height: 30px;
+  width: 70px;
+  margin: 0 15px;
+  border-radius: 15px;  
+}
+
+.remove-modal button:hover {
+  font-weight: bold;
+  background: rgb(158, 158, 158);
+}

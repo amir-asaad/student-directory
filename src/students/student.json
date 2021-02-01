@@ -1,0 +1,72 @@
+[
+  {
+    "name": "K Rimasol",
+    "student_number": "2013-00000",
+    "thesis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat.",
+    "team": "Tum",
+    "imageURL": "https://content.fakeface.rest/female_39_a01c66754ca8a39198b5ef2ff818d9b1b6c498a3.jpg"
+  },
+  {
+    "name": "Haze Dalobos",
+    "student_number": "2013-00001",
+    "thesis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at.",
+    "team": "Tum",
+    "imageURL": "https://content.fakeface.rest/female_37_daad2aa11c8190a97d9534edd7b819aac61b1992.jpg"
+  },
+  {
+    "name": "Rika Pesi",
+    "student_number": "2013-00002",
+    "thesis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla.",
+    "team": "Joj",
+    "imageURL": "https://content.fakeface.rest/female_23_1e90ecf7cd7ac64ddee19e84a6e3cb549ea2dc3d.jpg"
+  },
+  {
+    "name": "Hana Rots",
+    "student_number": "2013-00003",
+    "thesis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis.",
+    "team": "Joj",
+    "imageURL": "https://content.fakeface.rest/female_20_88b22c15c2363784d8ecd2bdd3799cc41628f514.jpg"
+  },
+  {
+    "name": "Vin Mun",
+    "student_number": "2013-00004",
+    "thesis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim.",
+    "team": "Herb",
+    "imageURL": "https://content.fakeface.rest/male_37_5a03b415ffd8cedccb8d869286fc0f6519d300dc.jpg"
+  },
+  {
+    "name": "Risty Bets",
+    "student_number": "2013-00005",
+    "thesis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim.",
+    "team": "Joj",
+    "imageURL": "https://content.fakeface.rest/female_34_45c712c6368005bfdc1c3df46d89e50cd702019b.jpg"
+  },
+  {
+    "name": "Ram Bags",
+    "student_number": "2013-00006",
+    "thesis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim.",
+    "team": "Herb",
+    "imageURL": "https://content.fakeface.rest/male_38_905717f94d543794d866fb48e7013a1e47315455.jpg"
+  },
+  {
+    "name": "Adri Regio",
+    "student_number": "2013-00007",
+    "thesis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim.",
+    "team": "Herb",
+    "imageURL": "https://content.fakeface.rest/male_32_50bffe3d9687a509704b6657aae8174129b3c49d.jpg"
+  },
+  {
+    "name": "Pul Evanglita",
+    "student_number": "2013-00008",
+    "thesis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim.",
+    "team": "Herb",
+    "imageURL": "https://content.fakeface.rest/male_43_601e51215378b3a15085b8a9e2d2e1db0cbef68f.jpg"
+  },
+  {
+    "name": "Yad Sarah",
+    "student_number": "2013-00009",
+    "thesis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim.",
+    "team": "Tum",
+    "imageURL": "https://content.fakeface.rest/male_31_bb0d3afbe2ef63a667e21edf2b52393e607dccee.jpg"
+  }
+]

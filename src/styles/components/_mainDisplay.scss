@@ -1,0 +1,19 @@
+.main-display__header {
+  margin-bottom: 20px;
+}
+
+.header__header {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.header--addStudent {
+  display: inline-block;  
+  margin-left: 15px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.header--addStudent:hover {
+  font-weight: bold;
+}

@@ -1,0 +1,31 @@
+.add-modal {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  left: 0;
+  background:rgba(241, 223, 223, 0.8);
+  padding-left: 10px;
+}
+
+.add-overlayModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(243, 234, 234, 0.8);
+}
+
+.add--close {
+  float: right;
+  font-size: 18px;
+}
+
+.add__error {
+  color: red;
+}
+
+.add--submit {
+  font-size: 20px;
+  margin-bottom: 10px;
+}

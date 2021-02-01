@@ -1,0 +1,35 @@
+.navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  margin-top: 36px;
+  top: 0px;
+  width: 100%;  
+  background: rgb(241, 223, 223);
+  border-bottom: 1px solid rgb(192, 187, 187);
+}
+
+.navigation__list {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation__list li {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.navigation__list button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: none;
+}
+
+.navigation__list button:hover {
+  cursor: pointer;
+  background: rgb(248, 203, 203);
+}

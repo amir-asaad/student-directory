@@ -1,0 +1,35 @@
+.view-member {
+  padding-top: 15px;
+  margin: 0;
+  width: 100%;
+
+  .view-member__first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .view-member__image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .view-member__thesis-header {
+    font-weight: bold;
+  }
+
+  .view-member__thesis {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .view-member {
+    padding-left: 20px;
+
+    .view-member__image  {
+      margin-right: 50px;
+    }
+  }
+}

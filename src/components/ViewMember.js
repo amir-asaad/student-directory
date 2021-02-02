@@ -6,17 +6,16 @@ const ViewMember = ({ student }) => {
 
   return (
     <div className="view-member">
-      <div className="view-member__flex">
-        <div className="view-member__name-studentNumber">
-          <h3>Name: {name}</h3>
-          <h3>Student Number: {student_number}</h3>
-          <br />
-          <p>Thesis: {thesis}</p>
+      <div className="view-member__first">
+        <div className="first__wrapper">
+          <h3 className="view-member__name">{name}</h3>
+          <h3 className="view-member__studentNumber">{student_number}</h3>
         </div>
-
-        <img src={student.imageURL} alt={`${student.name} picture`} />
-        <div className="view-member__flex__no-item"></div>      
+          <img className="view-member__image" src={student.imageURL} alt={`${student.name} picture`} />                
       </div>
+
+      <p className="view-member__thesis-header">Thesis</p>
+      <p className="view-member__thesis">{thesis}</p>   
 
     </div>
   );

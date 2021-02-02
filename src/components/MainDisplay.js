@@ -46,9 +46,9 @@ const MainDisplay = ({ students, studentsInTeam, team, handleRemoveStudentButton
   return (
     <div>
       <MainHeader />
-      <div>
+      <div className="main">
           { !viewing && (
-              <div className="main-display__header">
+              <div className="main__header">
                   <h2 className="header__header">Members</h2>
                   <button className="header--addStudent" onClick={handleAddStudentButton}>+ Add Student</button>
                 <SearchStudent handleSearchStudent={handleSearchStudent} error={error} />

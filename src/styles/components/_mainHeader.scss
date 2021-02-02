@@ -3,13 +3,27 @@
   position: absolute;  
   top: 0;
   background: rgb(241, 223, 223);
-  border-bottom: 1px solid rgb(192, 187, 187);
+  border-bottom: 1px solid rgb(211, 205, 205);
   width: 100%;
   padding: 0;
-  // box-sizing: border-box;
 }
 
 .main-header h1 {
+  font-size: 30px;
   padding-left: 10px;
   margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-header {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    left: 101px;
+  }
+
+  .main-header h1 {
+    padding: 10px 0;
+    padding-left: 10px;
+  }
 }

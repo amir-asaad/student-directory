@@ -27,3 +27,11 @@
   font-weight: bold;
   background: rgb(158, 158, 158);
 }
+
+@media only screen and (min-width: 768px) {
+  .remove-modal {
+    top: 20%;
+    right: 30%;
+    left: 30%;
+  }
+}

@@ -1,4 +1,4 @@
-.main-display__header {
+.main__header {
   margin-bottom: 20px;
 }
 
@@ -16,4 +16,14 @@
 
 .header--addStudent:hover {
   font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    margin-top: 55px;
+  }
+
+  .main__header {
+    width: 100%;
+  }
 }

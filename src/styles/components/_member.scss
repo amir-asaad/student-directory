@@ -6,7 +6,7 @@
 }
 
 .table tr td {
-  border-top: 1px solid rgb(192, 187, 187);
+  border-top: 1px solid rgb(211, 205, 205);
   padding: 10px 0;
   
 }
@@ -35,4 +35,23 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .row__image-name {
+    display: flex;
+    
+    .row__image, 
+    .row__name {
+      padding: 0 5px;
+    }
+
+    img {
+      display: inline;
+    }
+  }
+
+  .table__body button {
+    margin: 0 5px;
+  }
 }

@@ -8,6 +8,13 @@
   border-bottom: 1px solid rgb(192, 187, 187);
 }
 
+.navigation__schoolLogo {
+  display: none;
+  height: 50px;
+  width: 70px;
+  margin: 0 15px;
+}
+
 .navigation__list {
   display: flex;
   flex-flow: row wrap;
@@ -32,4 +39,25 @@
 .navigation__list button:hover {
   cursor: pointer;
   background: rgb(248, 203, 203);
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    float: left;
+    width: 100px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    border-right: 1px solid rgb(211, 205, 205);
+  }
+
+  .navigation__list {
+    flex-flow: column wrap;
+    width: 100px;
+  }
+
+  .navigation__schoolLogo {
+    display: block;
+  }
 }

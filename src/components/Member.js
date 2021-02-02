@@ -16,8 +16,8 @@ const Member = ({ student, handleViewStudent, handleRemoveStudentButton, handleU
         <tr className="body__row">
           <td onClick={viewStudent}>
             <div className="row__image-name">
-              <img src={imageURL} />
-              <p>{student.name}</p>
+              <img className="row__image" src={imageURL} />
+              <p className="row__name">{student.name}</p>
             </div>
           </td>
           <td onClick={viewStudent}>{student_number}</td>

@@ -37,7 +37,7 @@ export default class StudentDirectory extends React.Component
     {
       this.setState(() => ({
         team: undefined,
-        viewing: false
+        viewing: false,
       }));
     }
     else
@@ -137,7 +137,8 @@ export default class StudentDirectory extends React.Component
         thesis: student.thesis,
         team: student.team,
         imageURL: student.imageURL
-      }
+      },
+      errorSearch: undefined
     }));
   };
 
@@ -212,29 +213,34 @@ export default class StudentDirectory extends React.Component
 
   handleSearchStudent = (e) => {
     e.preventDefault();
-    
-    const name = e.target.search.value.trim();
+    const search = e.target.search.value.toLowerCase().trim();
     let studentFound = [];
 
-    const found = this.state.students.find(student => student.name === name);
-
-    if(name === '') { return; }
-
-    if(found)
+    for(const student of this.state.students) 
     {
-      const filteredStudent = this.state.students.filter(student => student.name === name);
+      const names = student.name.toLowerCase().split(' ');
+      const found = names.includes(search);;
 
-      this.setState(() => ({ 
-        studentsInTeam: studentFound.concat(filteredStudent),
+      if(found)
+      {
+        studentFound.push(student);
+      }
+    };
+
+    if(studentFound.length > 0)
+    {
+      this.setState(() => ({
+        studentsInTeam: studentFound,
         team: 'found',
         errorSearch: undefined
       }));
     }
     else
     {
-      this.setState(() => ({ errorSearch: 'Student not found' }));
+      this.setState(() => ({
+        errorSearch: 'Student Not Found'
+      }));
     }
-
   };
 
   render()

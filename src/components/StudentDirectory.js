@@ -214,32 +214,40 @@ export default class StudentDirectory extends React.Component
   handleSearchStudent = (e) => {
     e.preventDefault();
     const search = e.target.search.value.toLowerCase().trim();
-    let studentFound = [];
+    let students = [];
+    const searchArray = search.split(' ');
 
-    for(const student of this.state.students) 
+    if(search)
     {
-      const names = student.name.toLowerCase().split(' ');
-      const found = names.includes(search);;
-
-      if(found)
+      for(const student of this.state.students)
       {
-        studentFound.push(student);
+        const studentName = student.name.toLowerCase().split(' ');
+        for(const searchName of searchArray)
+        {
+          if(studentName.includes(searchName))
+          {
+            if(searchName === searchArray[searchArray.length - 1])
+            {
+              students.push(student);
+            }
+            continue;
+          }
+          break;
+        }
       }
-    };
-
-    if(studentFound.length > 0)
-    {
-      this.setState(() => ({
-        studentsInTeam: studentFound,
-        team: 'found',
-        errorSearch: undefined
-      }));
-    }
-    else
-    {
-      this.setState(() => ({
-        errorSearch: 'Student Not Found'
-      }));
+      
+      if(students.length > 0)
+      {
+        this.setState(() => ({
+          studentsInTeam: students,
+          team: 'found',
+          errorSearch: undefined,
+        }));
+      }
+      else
+      {
+        this.setState(() => ({ errorSearch: 'Student Not Found' }));
+      }
     }
   };
 
